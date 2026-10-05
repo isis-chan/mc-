@@ -2386,4 +2386,7 @@ function module.unload()
     end)
 end
 
+-- Fallback for executors that swallow top-level returns
+_G.MinecraftMod = module
+
 return module
